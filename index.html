@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Advanced Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img2.png" alt="My Logo" class="logo-img">
+            </div>
+            <h1><span class="highlight">My Portfolio</span></h1>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My World</h2>
+            <p>Building Solutions for the Future, One Line of Code at a Time.</p>
+            <a href="#projects" class="btn-primary">Explore Projects</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <img src="img1.jpg" alt="Profile Picture" class="profile-img">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hello! I am an undergraduate pursuing a Bachelor of Computer Engineering at KDU and a Bachelor of IT majoring in Cybersecurity at Victoria University. My passion lies in creating innovative solutions in technology and cybersecurity.</p>
+                </div>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="open-tab('education')">Educations</p>
+                    
+                    <div class="tab-content active-tab" id="education">
+                      <ul>
+                          <li><span>2009 - 2022</span><br>College Student at Sri Sumangala College - Panadura</li>
+                          <li><span>2024 - current</span><br>Undergraduate at KDU - Sri Lanka </li>
+                          <li><span>2023 - current</span><br>Undergraduate at Victoria University - Australia</li>
+  
+                      </ul>
+                  </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img4.jpg" alt="Project 1" class="project-img">
+                    <h3>Project 1</h3>
+                    <p>
+                        2024<br>
+                        A tool developed during a <span> programming workshop </span> using Java to monitor and visualize network traffic. The application leverages Java's networking libraries and graphical interfaces (e.g., JavaFX or Swing) to display real-time traffic patterns. It includes features such as packet filtering, traffic categorization, and visual alerts for anomalies, designed to enhance network security awareness.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img6.gif" alt="Project 2" class="project-img">
+                    <h3>Project 2</h3>
+                    <p>2024<br>
+
+                        Participated in the 18th edition of the <span> IEEE Xtreme programming competition </span> as part of KDU's team. Collaborated with peers to solve real-world computational challenges within 24 hours, focusing on algorithm design, optimization, and creative problem-solving.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img7.png" alt="Project 3" class="project-img">
+                    <h3>Project 3</h3>
+                    <p>2023<br>
+
+                        Competed in the <span>IEEE Manthra Hackathon </span> hosted by NSBM . Designed and developed a prototype solution addressing [describe the challenge theme if known, e.g., IoT, sustainability, etc.]. Worked with a multidisciplinary team to ideate, build, and present a working concept within a tight timeframe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-lock"></i>
+                    <p>Cybersecurity Basics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="Portfolio.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2024 My Portfolio. Designed with <img src="img2.png"></i> by YIR</p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/yasan-ranasinghe-45877027a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instragram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
